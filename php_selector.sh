@@ -27,7 +27,7 @@ if [ -e /etc/opt/remi/php${1}/php.ini ]; then
     ln -s /etc/opt/remi/php${1}/php.ini /etc/php${1}.ini
     ln -s  /etc/opt/remi/php${1}/php.d /etc/php${1}.d
 fi
-chmod +x /usr/local/vesta/data/templates/web/httpd/PHP${1}.sh
+chmod +x /usr/local/vesta/data/templates/web/httpd/PHP_${2}.sh
 
 tput setaf 1
 echo "PHP ${1} Ready!"
