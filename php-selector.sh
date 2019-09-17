@@ -172,6 +172,7 @@ tput sgr0
 
 if [ -e /etc/redhat-release ];then
 	if [ -z "$1" ]; then
+	        echo ${1};
 		usage
 		exit 2
 	fi
