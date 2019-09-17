@@ -20,9 +20,9 @@ exit 4
 fi
 
 fixit () {
-curl -s https://raw.githubusercontent.com/rahulcoolranjan/vesta-php-selector/master/common.sh > /usr/local/vesta/data/templates/web/httpd/PHP${1}.sh
-ln -s /usr/local/vesta/data/templates/web/httpd/phpfcgid.stpl /usr/local/vesta/data/templates/web/httpd/PHP ${2}.stpl
-ln -s /usr/local/vesta/data/templates/web/httpd/phpfcgid.tpl /usr/local/vesta/data/templates/web/httpd/PHP ${2}.tpl 
+curl -s https://raw.githubusercontent.com/rahulcoolranjan/vesta-php-selector/master/php/PHP_${1}.sh > /usr/local/vesta/data/templates/web/httpd/PHP_${2}.sh
+ln -s /usr/local/vesta/data/templates/web/httpd/phpfcgid.stpl /usr/local/vesta/data/templates/web/httpd/PHP_${2}.stpl
+ln -s /usr/local/vesta/data/templates/web/httpd/phpfcgid.tpl /usr/local/vesta/data/templates/web/httpd/PHP_${2}.tpl 
 if [ -e /etc/opt/remi/php${1}/php.ini ]; then
     ln -s /etc/opt/remi/php${1}/php.ini /etc/php${1}.ini
     ln -s  /etc/opt/remi/php${1}/php.d /etc/php${1}.d
