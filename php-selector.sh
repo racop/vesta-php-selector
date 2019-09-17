@@ -171,11 +171,6 @@ tput sgr0
 }
 
 if [ -e /etc/redhat-release ];then
-	if [ -z "$1" ]; then
-	        echo ${1};
-		usage
-		exit 2
-	fi
 	if [[ "$sistema" -eq 7  ||  "$sistema" -eq 6 ]]; then
 		tput setaf 4
 			echo "You have remi repo installed and run: "
